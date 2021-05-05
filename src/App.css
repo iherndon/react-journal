@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body,
+main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  flex-direction: column;
+  width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: #16697a;
+}
+
+textarea,
+#entries {
+  border-radius: 25px;
+  width: 400px;
+  height: 300px;
+  padding: 30px;
+  font-size: 20px;
+}
+
+textarea {
+  background-color: #ffa62b;
+}
+
+#entries {
+  background: #16697a;
+  color: #ede7e3;
+}
+
+#entries-nav button {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+#submit {
+  border-radius: 25px;
+  border: unset;
+  padding: 15px 30px;
+  margin: 20px 0 30px;
+  align-self: flex-end;
+  font-size: 1rem;
+}
+
+.selected,
+#entries-nav button:focus {
+  border: 2px solid #ffa62b;
+  outline: none;
 }
